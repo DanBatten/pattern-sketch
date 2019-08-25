@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "name": "Pattern Workflow",
+  "author": "Dan Batten @ Pattern Brands",
+  "description": "Pattern Workflow Tools",
+  "commands": [
+    {
+      "name": "Duplicate Version",
+      "identifier": "pattern.duplicateVersion",
+      "script": "./smartDuplicate.js",
+      "shortcut": "ctrl d",
+      "handler": "smartDuplicateVersion"
+    },
+    {
+      "name": "Duplicate Iterate",
+      "identifier": "pattern.duplicateIterate",
+      "script": "./smartDuplicate.js",
+      "shortcut": "ctrl shift d",
+      "handler": "smartDuplicateIterate"
+    }
+  ],
+  "menu": {
+    "title": "pattern",
+      "items": [
+      {
+       "title": "Smart Duplicate",
+       "items": [
+         "pattern.duplicateVersion",
+          "pattern.duplicateIterate"
+        ]
+      }
+    ]
+  }
+}
