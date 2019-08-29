@@ -54,7 +54,7 @@ export function smartDuplicateIterate(context){
 	var selection = context.selection;
 	for (var i = 0; i < selection.length; i++) {
 		if(selection[i].class() == 'MSArtboardGroup' ){
-			var currName,newName,abWidth, abX, abY;
+			var currName,newName,abHeight, abX, abY;
 			currName = selection[i].name();
 			abHeight = selection[i].frame().height();
 			abX = selection[i].frame().left();
