@@ -2,7 +2,7 @@ import sketch from 'sketch'
 // documentation: https://developer.sketchapp.com/reference/api/
 
 
-var smartDuplicateVersion = function(context){
+export function smartDuplicateVersion(context){
 	var app = NSApplication.sharedApplication();
 	var sketch = context.api();
 	var application = sketch.Application();
@@ -44,7 +44,7 @@ var smartDuplicateVersion = function(context){
 	
 }
 
-var smartDuplicateIterate = function(context){
+export function smartDuplicateIterate(context){
 	var app = NSApplication.sharedApplication();
 	var sketch = context.api();
 	var application = sketch.Application();
